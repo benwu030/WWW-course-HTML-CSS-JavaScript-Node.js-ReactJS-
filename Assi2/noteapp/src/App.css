@@ -1,0 +1,134 @@
+/*
+COMP3322 Assignment 2
+Creator : Wu Sen Pan 3035782372
+INOTEAPP
+React APP.css
+*/
+.Container {
+  /* hold the whole app */
+  margin: auto;
+  width: 50%;
+  overflow: auto;
+  background-color: #d0d5f7;
+  color: white;
+}
+.LoginContainer {
+  /* for login */
+  margin: auto;
+}
+.LoginContainer > div {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.TopInfoBar {
+  /* container for username, icon, logout  and title */
+  display: block;
+  padding-bottom: 5%;
+}
+h1 {
+  text-align: center;
+  margin: auto;
+}
+.TopInfo {
+  /* username icon logout */
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.TopInfo > img {
+  /* icon */
+  height: 2em;
+  margin-right: 1em;
+  border-radius: 25%;
+  width: 2em;
+}
+.TopInfo > button {
+  /* logout */
+  float: right;
+}
+.MainContent {
+  /* container for left and right bar */
+  overflow: auto;
+  position: relative;
+  background-color: #cae9e0;
+}
+.EmptyButton {
+  /* when there is no content in the right bar  */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.Note {
+  /* Each Note */
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.EditButton {
+  /* Display MOde */
+  float: right;
+}
+.EditButton > button {
+  margin: 0.4em;
+}
+.DisplayButton {
+  text-align: center;
+  margin-left: 20%;
+}
+.AddButton {
+  float: right;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+.Empty {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.Title {
+  /* Note TItle */
+  display: block;
+  padding: 8px;
+  margin: 10% 20%;
+}
+.Content {
+  display: block;
+
+  padding: 8px;
+  margin: 10% 20%;
+}
+.Note > button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.NoteSideBar {
+  float: left;
+  background-color: #f6dae4;
+}
+.SearchBar {
+  padding: 2em;
+}
+.NavigationMenu > ul {
+  cursor: pointer;
+  padding-left: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 20px;
+}
+.side_bar_item {
+  /* Note navigation bar */
+  background-color: #f6dae4;
+  list-style-type: none;
+  padding: 0.5em 0.4em;
+}
+.highlighted {
+  background-color: #f3b8b1;
+}
