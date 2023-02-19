@@ -1,0 +1,189 @@
+/* author Wu Sen Pan UID 3035782372
+COMP 3322 Assignment 1 */
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+[class*="col-"] {
+  float: left;
+}
+body {
+  padding: 50px;
+  
+  font: 2vw "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+.topbar {
+  display: flex;
+}
+button{
+  background-color: #f0f0f0; /* Green */
+  border-radius: 4px;
+  border-color: #f0f0f0;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  font-size: 2vw;
+}
+.albumbox_container {
+  display: flex;
+  width: 100%;
+}
+.sidebar {
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.sidebar ul {
+  cursor: pointer;
+  padding-left: 0;
+
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 2vw;
+  color: #ffffff;
+  display: block;
+}
+.sidebar li {
+  padding: 2vw;
+}
+.selected {
+  background-color: #ffffff;
+  color: #000000;
+}
+.main_content {
+  border-style: solid;
+  border-left: 0;
+}
+.albumbox {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+.Enlarged {
+  display: block;
+}
+.Enlarged div {
+  float: left;
+}
+.Enlarged > img {
+  display: block;
+  margin-left: 16.66%;
+  margin-right: 16.66%;
+  width: 66.66%;
+  height: auto;
+}
+.Enlarged > video {
+  display: block;
+  margin-left: 16.66%;
+  margin-right: 16.66%;
+  width: 66.66%;
+  height: auto;
+}
+.box {
+  width: 50%;
+  float: left;
+  padding-bottom: 10%;
+}
+@media only screen and (max-width: 600px) {
+  .box {
+    width: 100%;
+    display: block;
+    margin-bottom: 5%;
+  }
+  .albumbox_container {
+    display: block;
+  
+  }
+  .sidebar{
+    width: 100%;
+
+  }
+  .sidebar ul{
+    width: 100%;
+
+    display: inline-block;
+
+  }
+  .sidebar li{
+    padding: 5%;
+    float:left;
+
+  }
+  .main_content{
+    width: 100%;
+    border: none;
+  }
+  img{width: 100%;}
+  video{width: 100%;}
+}
+.box > div {
+  text-align: center;
+  font-size: 1.5vw;
+}
+.box > button {
+  justify-content: center;
+}
+.navbtn {
+  display: flex;
+}
+.navbtn > button {
+  width: 50%;
+}
+img {
+  /* center photo*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  cursor: pointer;
+  max-width: 100%;
+  height: 100%;
+}
+video {
+  /* center video*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  max-width: 100%;
+  height: 100%;
+}

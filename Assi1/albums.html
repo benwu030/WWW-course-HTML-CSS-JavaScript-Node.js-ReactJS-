@@ -1,0 +1,57 @@
+<!-- author Wu Sen Pan UID 3035782372
+COMP 3322 Assignment 1 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMP3322 Assignment 1 Album</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="javascripts/script.js"></script>
+</head>
+
+<body onload="init()">
+    <div id=topbar class="topbar col-12">
+        <h1 class="col-3">Albums</h1>
+        <div class="col-9">
+            <div id="logout_btn" style="float: right;"></div>
+            <div id="welcome_msg" style="float: right;"></div>
+
+        </div>
+        <form id="login_form" class="col-9">
+
+            <div style="float: right;">
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="test" id="username" name="username">
+                </div>
+                <div style="display:inline">
+                    <label for="password">password:</label>
+                    <input type="password" id="password" name="password">
+                    <button onclick="login();return false;">log in</button>
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <div class="albumbox_container">
+        <div id="sidebar" class="sidebar  col-2">
+            <ul id="sidebar_content">
+            </ul>
+        </div>
+        <div id="main_content" class="main_content col-10">
+            <div id=albumbox class="albumbox"></div>
+            <div id="navbtn" class="navbtn"></div>
+        </div>
+
+    </div>
+
+</body>
+
+
+
+
+</html>
